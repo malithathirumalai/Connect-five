@@ -1,0 +1,56 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+newSize=0;
+function init() {}
+function resetGame() {window.location="xo.htm"}
+
+//-->
+</script>
+<LINK REL="stylesheet" HREF="/stylesheet.css">
+</head>
+<body bgcolor="#1F1F68">
+
+
+<form>
+<center>
+<h1>CONNECT-FIVE</h1>
+<table cellspacing=0 cellpadding=0>
+<tr>
+<td colspan=2>
+<center>
+<p class=bodytext>Your goal in Connect-five is to get five cells in a row while preventing your 
+opponent from getting the same. You play the red cell while the computer 
+plays the blue cell.<br>First move is yours. 
+<br>choose your level and start playing</p>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+<center>
+<p>
+<font size=2 face="Arial,Helvetica,sans-serif">LEVEL:</font>&nbsp;<select onChange="top.boardSize=parseInt(this.options[this.selectedIndex].value);top.init()">
+<option value=10>easy
+<option value=15 selected>medium
+<option value=20>hard
+</select>
+</p>
+</td>
+</center>
+<tr>
+<td>
+<center>
+<p><br>
+<font size=2 face="Arial,Helvetica,sans-serif"><input type=button value=" New Game " onClick="setTimeout('top.resetGame()',100)"></font>
+</p>
+</center>
+</td></tr></table>
+
+</center>
+</form>
+
+</body>
+</html>
